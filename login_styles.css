@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display-swap');
+
+
+:root{
+    --transition: all 0.7s ease;
+    --aqua: #00ffff;
+    --dark: #292826;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("./Images/banner-img.jpg") center/cover no-repeat;
+}
+
+.box{
+	width: 300px;
+	padding: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.box h1 span{
+	color: #00ffff;
+}
+
+.box input[type="text"],.box input[type="password"]{
+	font-size: 15px;
+	font-weight: 100;
+	border: 0;
+	background-color: transparent;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 3px solid #00ffff;
+	padding: 14px 10px;
+	width: 220px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: var(--transition);
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+	width: 270px;
+	border-color: #00ffff;
+}
+
+.box input[type="submit"]{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 3px solid #00ffff;
+	padding: 14px 35px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+	background: #00ffff;
+}
