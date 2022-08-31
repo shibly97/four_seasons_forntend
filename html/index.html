@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4SeasonReservationSystem</title>
+    <!--Font awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="styles.css">-->
+</head>
+<body>
+    <!--Header-->
+    <header class="header" id="header">
+        <div class="head-top">
+            <div class="site-name">
+                <span>HOTEL 4 SEASONS</span>
+            </div>
+            <div class="site-nav">
+                <span id="nav-btn">Menu <i class="fa fa-bars"></i>
+                </span>
+            </div>
+        </div>
+
+        <section class="booking">
+        <div class="head-bottom flex">
+            <h2>Welcome to <span>4</span> Seasons</h2>
+            <p>Enjoy our luxury plessure and create memories with us</p>
+
+            <form class="box">
+                <div class="reservations">
+                    <div class="input-box">
+                        <span class="details">Search Here</span>
+                        <input type="text" placeholder="Search for hotels here..." required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Check In Date</span>
+                        <input type="date" placeholder="" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Check Out Date</span>
+                        <input type="date" placeholder="" required>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="srch-btn">Search</button>
+                </div>
+            </form>
+        </div>
+        </section>
+
+            <!--<form class="book-form">
+                <div class="form-item">
+                    <label for="location"></label>
+                    <input type="text" placeholder="Find a city, location or destination">
+                </div>
+                <div class="form-item">
+                    <label for="checkin-date"></label>
+                    <input type="date" id="checkin-date" placeholder="Check In Date">
+                </div>
+                <div class="form-item">
+                    <label for="checkout-date"></label>
+                    <input type="date" id="checkout-date" placeholder="Check Out Date">
+                </div>
+                <div class="form-item">
+                    <input type="submit" class="btn" value="Book Now">
+                </div>
+            </form>-->
+        </div>
+    </header>
+    <!--End of Header-->
+    
+    <!--Side Nav-->
+    <div class="sidenav" id="sidenav">
+        <span class="cancel-btn" id="cancel-btn">
+            <i class="fa fa-times"></i>
+        </span>
+
+        <ul class="navbar">
+            <li><a href="#header">HOME</a></li>
+            <li><a href="#header">SERVICES</a></li>
+            <li><a href="#header">ROOMS</a></li>
+        </ul>
+        <a href="login.html">
+            <button class="btn log-in">Log In</button>
+        </a>
+    </div>
+    <!--End of Side Nav-->
+
+    <!--Full Screen Model-->
+    <div id="model"></div>
+    <!--End of Full Screen Model-->
+
+    <!--Body Content-->
+    <section class="services sec-width" id="services">
+        <div class="title">
+            <h2>Services</h2>
+        </div>
+        <div class="services-container">
+            <!--Single Service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fa fa-cutlery"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Restaurents</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex rerum quae! Itaque, hic earum.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!--End of Single Service-->
+            <!--Single Service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fa fa-glass" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Refreshment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex rerum quae! Itaque, hic earum.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!--End of Single Service-->
+            <!--Single Service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Housekeeping</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex rerum quae! Itaque, hic earum.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!--End of Single Service-->
+            <!--Single Service-->
+            <article class="service">
+                <div class="service-icon">
+                    <span>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="service-content">
+                    <h2>Business Travel</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ex rerum quae! Itaque, hic earum.</p>
+                    <button type="button" class="btn">Know More</button>
+                </div>
+            </article>
+            <!--End of Single Service-->
+        </div>
+    </section>
+
+    <!--<div class="book">
+        <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date</label>
+                <input type="date" id="checkin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date</label>
+                <input type="date" id="checkout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults:</label>
+                <input type="number" min="1" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children:</label>
+                <input type="number" min="1" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms:</label>
+                <input type="number" min="1" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="Book Now">
+            </div>
+        </form>
+    </div>-->
+
+    <section class="rooms sec-width" id="rooms">
+        <div class="title">
+            <h2>Rooms</h2>
+        </div>
+        <div class="rooms-container">
+            <!--Single Room-->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./Images/img2.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h1>Luxury Room</h1>
+                    <ul>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, 
+                        minus est exercitationem sapiente error magni consequatur 
+                        perferendis accusantium facere laborum inventore dolor sunt consectetur, 
+                        aperiam sequi. Est unde neque fugit?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, 
+                        minus est exercitationem sapiente error magni consequatur 
+                        perferendis accusantium facere laborum inventore dolor sunt consectetur, 
+                        aperiam sequi. Est unde neque fugit?</p>
+                    <p class="rate">
+                        <span>Rs.15500.00 LKR /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">Book Now</button>
+                </div>
+            </article>
+            <!--End of Single Room-->
+
+            <!--Single Room-->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./Images/img1.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h1>Semi-Luxury Room</h1>
+                    <ul>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, 
+                        minus est exercitationem sapiente error magni consequatur 
+                        perferendis accusantium facere laborum inventore dolor sunt consectetur, 
+                        aperiam sequi. Est unde neque fugit?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, 
+                        minus est exercitationem sapiente error magni consequatur 
+                        perferendis accusantium facere laborum inventore dolor sunt consectetur, 
+                        aperiam sequi. Est unde neque fugit?</p>
+                    <p class="rate">
+                        <span>Rs.12500.00 LKR /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">Book Now</button>
+                </div>
+            </article>
+            <!--End of Single Room-->
+
+            <!--Single Room-->
+            <article class="room">
+                <div class="room-image">
+                    <img src="./Images/img3.jpg" alt="room image">
+                </div>
+                <div class="room-text">
+                    <h1>Single Bed Room</h1>
+                    <ul>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                        <li>
+                            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                            Lorem ipsum dolor sit amet.
+                        </li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, 
+                        minus est exercitationem sapiente error magni consequatur 
+                        perferendis accusantium facere laborum inventore dolor sunt consectetur, 
+                        aperiam sequi. Est unde neque fugit?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, 
+                        minus est exercitationem sapiente error magni consequatur 
+                        perferendis accusantium facere laborum inventore dolor sunt consectetur, 
+                        aperiam sequi. Est unde neque fugit?</p>
+                    <p class="rate">
+                        <span>Rs.8500.00 LKR /</span> Per Night
+                    </p>
+                    <button type="button" class="btn">Book Now</button>
+                </div>
+            </article>
+            <!--End of Single Room-->
+        </div>
+    </section>
+
+    <section class="customers" id="customers">
+        <div class="sec-width">
+            <div class="title">
+                <h2>Customer</h2>
+            </div>
+            <div class="customer-container">
+                <!--Single Customer-->
+                <div class="customer">
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star-o"></i></i></span>
+                    </div>
+                    <h3>We Loved IT</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eos adipisci rem, nam itaque ratione fugiat provident 
+                        fugit consectetur perferendis modi?</p>
+                    <img src="./Images/customer1.png" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!--End of Single Customer-->
+
+                 <!--Single Customer-->
+                 <div class="customer">
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star-o"></i></i></span>
+                    </div>
+                    <h3>Confortable Environment</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eos adipisci rem, nam itaque ratione fugiat provident 
+                        fugit consectetur perferendis modi?</p>
+                    <img src="./Images/customer2.png" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!--End of Single Customer-->
+
+                 <!--Single Customer-->
+                 <div class="customer">
+                    <div class="rating">
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star"></i></span>
+                        <span><i class="fa fa-star-o"></i></span>
+                    </div>
+                    <h3>Nice Place</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                        Eos adipisci rem, nam itaque ratione fugiat provident 
+                        fugit consectetur perferendis modi?</p>
+                    <img src="./Images/customer3.png" alt="customer image">
+                    <span>Customer Name, Country</span>
+                </div>
+                <!--End of Single Customer-->
+            </div>
+        </div>
+    </section>
+    <!--End of Body Content-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Vero, vel reprehenderit 
+                    a dicta consequatur repellat.</p>
+                    <ul class="social-icons">
+                        <li class="flex">
+                            <i class="fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class="flex">
+                            <i class="fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+            </div>
+
+            <div>
+                <h2>Useful Links</h2>
+                <a href="#">Blog</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#">Subscription</a>
+                <a href="#">Gift Card</a>
+            </div>
+
+            <div>
+                <h2>About 4 Seasons</h2>
+                <a href="#">About Us</a>
+                <a href="#">Career</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div>
+                <h2>Have an inquiry?</h2>
+                <div class="contact-item">
+                    <span>
+                        <i class="fa fa-map-marker"></i>
+                    </span>
+                    <span>
+                        11th Street, Galle Face, Colombo, Sri Lanka
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fa fa-phone"></i>
+                    </span>
+                    <span>
+                        +94 11 122 2333
+                    </span>
+                </div>
+                <div class="contact-item">
+                    <span>
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <span>
+                        info@4seasons.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+    <script src="../js/main.js"></script>
+</body>
+</html

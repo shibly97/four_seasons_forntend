@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="../css/admindashboard.css">
+    
+    <title>Admin Dashboard</title>
+    
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="./Images/dashlogo.png" alt="">
+            </div>
+
+            <span class="logo_name">4Seasons</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="hotels.html">
+                    <i class="uil uil-building"></i>
+                    <span class="link-name">Hotels</span>
+                </a></li>
+                <!--<li><a href="#">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Staff</span>
+                </a></li>-->
+                <li><a href="users.html">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">Users</span>
+                </a></li>
+                <!--<li><a href="#">
+                    <i class="uil uil-calendar-alt"></i>
+                    <span class="link-name">Reservations</span>
+                </a></li>-->
+                <li><a href="rooms.html">
+                    <i class="uil uil-bed-double"></i>
+                    <span class="link-name">Rooms</span>
+                </a></li>
+            </ul>
+
+            <ul class="logout-mode">
+                <li><a href="login.html">
+                    <i class="uil uil-sign-out-alt"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                        <span class="link-name">Dark Mode</span>
+                    </a>
+
+                    <div class="mode-toggle">
+                    <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search Here...">
+            </div>
+
+            
+            <img src="./Images/profile-pic.png" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+                
+                <div class="boxes">
+                    <div class="box box1">
+                      <i class="uil uil-calendar-alt"></i>
+                      <span class="text">Total Reservations</span><br>
+                      <span class="number">18</span>  
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-bed-double"></i>
+                        <span class="text">Available Rooms</span><br>
+                        <span class="number">74</span>  
+                      </div>
+                      <div class="box box3">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Total Users</span><br>
+                        <span class="number">15</span>  
+                      </div>
+            
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock"></i>
+                    <span class="text">Recent Activities</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Shibly Mohamed</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Email</span>
+                        <span class="data-list">Shibly2016@gmail.com</span>
+                    </div>
+                    <div class="data joiined-date">
+                        <span class="data-title">Date Joined</span>
+                        <span class="data-list">2018-08-24</span>
+                    </div>
+                    <div class="data roleid">
+                        <span class="data-title">Role ID</span>
+                        <span class="data-list">02</span>
+                    </div>
+                    <div class="data user-type">
+                        <span class="data-title">User Type</span>
+                        <span class="data-list">New</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">Active</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/admindashboard_script.js"></script>
+</body>
+</html>

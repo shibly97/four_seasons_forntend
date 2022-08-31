@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Seasons</title>
+    <link rel="stylesheet" href="../css/roomcategory.css">
+</head>
+<body>
+    <div class="header">
+        <img src="./Images/dashlogo.png" alt="">
+        <h2>Hotel 4 Seasons</h2>
+    </div>
+    
+    <div class="container">
+    <div class="title">Rooms Cetegory
+        <i class="uil uil-building"></i>
+    </div>
+    <form class="box">
+        <div class="room-details">
+            <div class="input-box">
+                <span class="details">Room Category ID</span>
+                <input type="text" placeholder="Enter Room Category ID" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Name</span>
+                <input type="text" placeholder="Enter Name" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Bed Count</span>
+                <input type="number" min="1" placeholder="Enter Room ID" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Description</span>
+                <input type="text" min="1" placeholder="Description" required>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit" class="add-btn">Add</button>
+            <button type="submit" class="update-btn">Update</button>
+            <button type="submit" class="remove-btn">Remove</button>
+        </div>
+    </form>
+    </div>
+</body>
+<script src="../js/roomcategory.js"></script>
+</html>

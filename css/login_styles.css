@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap');
+
+:root{
+    --transition: all 0.7s ease;
+    --aqua: #00ffff;
+    --dark: #292826;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("./130751213.jpg") center/cover no-repeat;
+}
+
+.box{
+	width: 300px;
+	padding: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: rgba(0,0,0,0.4);
+	text-align: center;
+}
+
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.box h1 span{
+	color: #00ffff;
+}
+
+.box input[type="text"],.box input[type="password"]{
+	font-size: 15px;
+	font-weight: 100;
+	border: 0;
+	background-color: transparent;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 3px solid #00ffff;
+	padding: 14px 10px;
+	width: 220px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: var(--transition);
+}
+
+.box input[type="text"]:focus,.box input[type="password"]:focus{
+	width: 270px;
+	border-color: #00ffff;
+}
+
+.box button{
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 3px solid #00ffff;
+	padding: 14px 35px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: var(--transition);
+	cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+	background: #00ffff;
+}
